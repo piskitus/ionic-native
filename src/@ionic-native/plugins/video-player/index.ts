@@ -39,6 +39,18 @@ export interface VideoOptions {
  *  console.log(err);
  * });
  *
+ *
+ * // Playing a video with options.
+ * let options: any = {
+ *  volume: 0.5, // From 0 to 1 (int)
+ *  scalingMode: 2 // 1=SCALE_TO_FIT, 2=SCALE_TO_FIT_WITH_CROPPING (int)
+ * }
+ * this.videoPlayer.play('file:///android_asset/www/movie.mp4', options).then(() => {
+ *  console.log('video completed');
+ * }).catch(err => {
+ *  console.log(err);
+ * });
+ *
  * ```
  * @interfaces
  * VideoOptions
